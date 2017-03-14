@@ -1,28 +1,110 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
-		<title>Главная страница</title>
-		<!-- SEO -->
-		<meta name="description" content="loftschool_homework">
-		<meta name="keyworde" content="loftschool_homework">
-		<meta name="author" content="Gomer Simpson">
-		<!-- favicon.ico 	
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		-->
-		<!-- ower CSS -->
-		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-		<!-- CSS -->
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/about-me.css">
-		<!-- modernizer -->
-		<script src="bower/modernizer/modernizr.js"></script>
-	</head>
-	<body>
-		<h1>.!..</h1>
-		<script src="bower/jquery/dist/jquery.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ-2 Никиты Бушкова</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h1 class="head__zag">
+                Домашняя работа 2
+            </h1>
+            <span class="head__content">
+                выполнил: Никита Бушков
+            </span>
+        </header>
+            <h1>формы:</h1>
+            <form class="form" action="#" method="post" name="form">
+                <div>
+                    <ladel class="form__ladel" for="name">Имя:</ladel>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <ladel class="form__ladel" for="tel">Телефон:</ladel>
+                    <input id="tel" type="tel">
+                </div>
+                <div>
+                    <ladel class="form__ladel" for="mail">mail:</ladel>
+                    <input id="mail" type="email">
+                </div>
+                <div>
+                    <ladel class="form__ladel" for="number">Год:</ladel>
+                    <input id="number" type="number" min="1996" max="2017">
+                    <ladel for="month">Месяц</ladel>
+                    <input id="month" type="number" min="1" max="12">
+                    <ladel for="day">День</ladel>
+                    <input id="day" type="number" min="1" max="31">
+                </div>
+                <div class="form__input">
+                    <input type="radio" checked name="radioJob"> выбор 1
+                </div>
+                <div class="form__input">
+                    <input type="radio" checked name="radioJob"> выбор 2
+                </div>
+                <div class="form__input">
+                    <input type="radio" checked name="radioJob"> выбор 3
+                </div>
+                <div class="form__button">
+                    <button  type="reset">Resrt</button>
+                </div>
+            </form>
+        <h1>таблицы:</h1>
+        <div class="table">
+            <table border="l" border-spacing="10">
+                <tr>
+                    <td colspan="2">
+                        Две ячейки, объединенные по горизонтали
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        Две ячейки, объединенные по вертикали
+                    </td>
+                    <td>просто ячейка</td>
+                    <tr><td > просто ячейка </td></tr>
+                </tr>
+            </table>
+        </div>
+        <div class="medua">
+            <h1>
+            Медиа-запросы:
+            </h1>
+            <table class="table__medua" border="1">
+                <caption>
+                    Типы носителей
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Тип носителя</th>
+                        <th>значение</th>
+                    </tr>
+                    <tr>
+                        <th>all</th>
+                        <th>все типы устройств (стоит по умолчанию);</th>
+                    </tr>
+                    <tr>
+                        <th>screen</th>
+                        <th>экран монитора;</th>
+                    </tr>
+                    <tr>
+                        <th>tv</th>
+                        <th>экран монитора;</th>
+                    </tr>
+                    <tr>
+                        <th>print</th>
+                        <th>печатающие устройства;</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="blok">
+            <div class="blok-red">
+            </div>
+            <div class="blok-green">
+            </div>
+        </div>
+    </div>
+</body>
 </html>
